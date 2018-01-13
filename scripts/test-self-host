@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+set -eu
+
+OUTPUT_DIR=target/out/self-host
+
+rm -rf $OUTPUT_DIR
+mkdir -p $OUTPUT_DIR/cljs/analyzer
+lein with-profile self-host run scripts/build_self_host.clj
+node $OUTPUT_DIR/main.js
