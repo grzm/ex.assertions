@@ -1,7 +1,6 @@
 (ns com.grzm.ex.assertions-test
   (:require
-   #?(:clj [clojure.test :refer [deftest is]]
-      :cljs [cljs.test :refer-macros [deftest is]])
+   [clojure.test :refer [deftest is]]
    [com.grzm.ex.assertions]))
 
 (deftest test-thrown-with-data

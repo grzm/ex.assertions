@@ -1,8 +1,7 @@
 (ns com.grzm.ex.assertions
   #?(:cljs (:require-macros [com.grzm.ex.assertions.cljs]))
   (:require
-   #?(:clj [clojure.test :as test]
-      :cljs [cljs.test :as test])
+   [clojure.test :as test]
    [com.grzm.ex.assertions.impl :as impl]))
 
 #?(:clj
